@@ -1,26 +1,37 @@
-const path = require('path');
-
 module.exports = {
-  entry: './src/browser.js',
+  // モード値を production に設定すると最適化された状態で、
+  // development に設定するとソースマップ有効でJSファイルが出力される
+  mode: 'production',
+
+  // メインとなるJavaScriptファイル（エントリーポイント）
+  entry: './src/main.js',
+  // ファイルの出力設定
   output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js',
-    publicPath: '/'
+    //  出力ファイルのディレクトリ名
+    path: `${__dirname}/dist`,
+    // 出力ファイル名
+    filename: 'main.js'
   },
   module: {
     rules: [
       {
+        // 拡張子 .js の場合
         test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              ['env', { modules: false }],
-              'react'
-            ]
+        use: [
+          {
+            // Babel を利用する
+            loader: 'babel-loader',
+            // Babel のオプションを指定する
+            options: {
+              presets: [
+                // プリセットを指定することで、ES2019 を ES5 に変換
+                '@babel/preset-env',
+                // React の JSX を解釈
+                '@babel/react'
+              ]
+            }
           }
-        },
-        exclude: /node_modules/
+        ]
       }
     ]
   }
