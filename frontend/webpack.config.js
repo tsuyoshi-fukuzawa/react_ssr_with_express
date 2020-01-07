@@ -1,13 +1,17 @@
 const path = require('path');
 
+const src = path.resolve(__dirname, "src");
+const dist = path.resolve(__dirname, "dist");
+
 const env = process.env.NODE_ENV;
+
 
 const config = {
     mode: env || 'development',
     target: 'node',
     entry: {
-        client: [path.resolve(__dirname, 'src/client.js')],
-        server: [path.resolve(__dirname, 'src/server.js')],
+        client: [src + '/client.js'],
+        server: [src + '/server.js'],
     },
     output: {
         path: path.resolve(__dirname, './public/'),
