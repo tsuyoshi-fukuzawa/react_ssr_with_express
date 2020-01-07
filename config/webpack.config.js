@@ -11,6 +11,9 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
     path: path.resolve('dist'),
     filename: '[name].js'
   },
+  devServer: {
+    historyApiFallback: true
+  },
   module: {
     rules: [
       {
