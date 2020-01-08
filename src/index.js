@@ -8,6 +8,7 @@ const Index = () => {
       <div>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
+        <Route path='/contact' component={Contact} />
       </div>
     </BrowserRouter>
 
@@ -17,14 +18,24 @@ const Index = () => {
 const Home = () => (
   <div>
     <h2>Home</h2>
-    <p>Welcome to ようこそ</p>
-    <Link to='/about'>about</Link>
+    <p>ようこそ</p>
+    <ul>
+      <li><Link to='/about'>about</Link></li>
+      <li><Link to='/contact'>contact</Link></li>
+    </ul>
   </div>
 )
 const About = () => (
   <div>
     <h2>About</h2>
-    <p>フレンズに投票するページです</p>
+    <p>サンプルページです。このページはSSRではありません。</p>
+    <Link to='/'>home</Link>
+  </div>
+)
+const Contact = () => (
+  <div>
+    <h2>Contact</h2>
+    <p>お問い合わせページです。このページはSSRされます。</p>
     <Link to='/'>home</Link>
   </div>
 )
