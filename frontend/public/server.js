@@ -1671,42 +1671,6 @@ eval("module.exports = function (module) {\n  if (!module.webpackPolyfill) {\n  
 
 /***/ }),
 
-/***/ "./src/Container/About.js":
-/*!********************************!*\
-  !*** ./src/Container/About.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n\n\n\nvar About = function About(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"This Page is About Page!!\", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"br\", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], {\n    to: '/'\n  }, \"top\"));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (About);\n\n//# sourceURL=webpack:///./src/Container/About.js?");
-
-/***/ }),
-
-/***/ "./src/Container/App.js":
-/*!******************************!*\
-  !*** ./src/Container/App.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n\n\n\nvar App = function App(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"Name is \", props.name || 'hoge', \" \", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"br\", null), \"Path is \", props.match.path, \" \", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"br\", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], {\n    to: '/about'\n  }, \"about\"));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (App);\n\n//# sourceURL=webpack:///./src/Container/App.js?");
-
-/***/ }),
-
-/***/ "./src/Container/Html.js":
-/*!*******************************!*\
-  !*** ./src/Container/Html.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-config */ \"./node_modules/react-router-config/esm/react-router-config.js\");\n\n\n\nvar Html = function Html(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"html\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"head\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"title\", null, \"App\")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"body\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    id: \"app\"\n  }, Object(react_router_config__WEBPACK_IMPORTED_MODULE_1__[\"renderRoutes\"])(props.route.routes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"script\", {\n    src: \"/client.js\"\n  })));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Html);\n\n//# sourceURL=webpack:///./src/Container/Html.js?");
-
-/***/ }),
-
 /***/ "./src/Routes/routes.js":
 /*!******************************!*\
   !*** ./src/Routes/routes.js ***!
@@ -1715,7 +1679,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Container_Html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Container/Html */ \"./src/Container/Html.js\");\n/* harmony import */ var _Container_App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Container/App */ \"./src/Container/App.js\");\n/* harmony import */ var _Container_About__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Container/About */ \"./src/Container/About.js\");\n\n\n\nvar Routes = [{\n  component: _Container_Html__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  routes: [{\n    path: '/',\n    exact: true,\n    component: _Container_App__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n  }, {\n    path: '/about',\n    exact: true,\n    component: _Container_About__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  }]\n}];\n/* harmony default export */ __webpack_exports__[\"default\"] = (Routes);\n\n//# sourceURL=webpack:///./src/Routes/routes.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_layouts_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/layouts/server */ \"./src/components/layouts/server.js\");\n/* harmony import */ var _components_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/home */ \"./src/components/home/index.js\");\n/* harmony import */ var _components_sample__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/sample */ \"./src/components/sample/index.js\");\n/* harmony import */ var _components_sample_show__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/sample/show */ \"./src/components/sample/show.js\");\n\n\n\n\nvar Routes = [{\n  component: _components_layouts_server__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n  routes: [{\n    path: '/',\n    exact: true,\n    component: _components_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n  }, {\n    path: '/sample',\n    exact: true,\n    component: _components_sample__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  }]\n}];\n/* harmony default export */ __webpack_exports__[\"default\"] = (Routes);\n\n//# sourceURL=webpack:///./src/Routes/routes.js?");
 
 /***/ }),
 
@@ -1728,6 +1692,54 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Con
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"router\", function() { return router; });\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"./node_modules/express/index.js\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/server */ \"./node_modules/react-dom/server.js\");\n/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n/* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-config */ \"./node_modules/react-router-config/esm/react-router-config.js\");\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes */ \"./src/Routes/routes.js\");\n\n\n\n\n\n\nvar app = express__WEBPACK_IMPORTED_MODULE_0___default()();\nvar router = express__WEBPACK_IMPORTED_MODULE_0___default.a.Router();\nrouter.get('*', function (req, res) {\n  var context = {};\n  react_dom_server__WEBPACK_IMPORTED_MODULE_2___default.a.renderToNodeStream(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__[\"StaticRouter\"], {\n    location: req.url,\n    context: context\n  }, Object(react_router_config__WEBPACK_IMPORTED_MODULE_4__[\"renderRoutes\"])(_routes__WEBPACK_IMPORTED_MODULE_5__[\"default\"]))).pipe(res);\n});\n\n\n//# sourceURL=webpack:///./src/Routes/serverRoutes.js?");
+
+/***/ }),
+
+/***/ "./src/components/home/index.js":
+/*!**************************************!*\
+  !*** ./src/components/home/index.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n\n\n\nvar Home = function Home(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"Name is \", props.name || 'hoge', \" \", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"br\", null), \"Path is \", props.match.path, \" \", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"br\", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], {\n    to: '/sample'\n  }, \"about\"));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/components/home/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/layouts/server.js":
+/*!******************************************!*\
+  !*** ./src/components/layouts/server.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-config */ \"./node_modules/react-router-config/esm/react-router-config.js\");\n\n\n\nvar Html = function Html(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"html\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"head\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"title\", null, \"App\")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"body\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n    id: \"app\"\n  }, Object(react_router_config__WEBPACK_IMPORTED_MODULE_1__[\"renderRoutes\"])(props.route.routes)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"script\", {\n    src: \"/client.js\"\n  })));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Html);\n\n//# sourceURL=webpack:///./src/components/layouts/server.js?");
+
+/***/ }),
+
+/***/ "./src/components/sample/index.js":
+/*!****************************************!*\
+  !*** ./src/components/sample/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n\n\n\nvar SampleIndex = function SampleIndex(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"This Page is About Page!!\", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"br\", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], {\n    to: '/'\n  }, \"top\"));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (SampleIndex);\n\n//# sourceURL=webpack:///./src/components/sample/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/sample/show.js":
+/*!***************************************!*\
+  !*** ./src/components/sample/show.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/esm/react-router-dom.js\");\n\n\n\nvar SampleShow = function SampleShow(props) {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, \"This Page is About Page!!\", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"br\", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__[\"Link\"], {\n    to: '/'\n  }, \"top\"));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (SampleShow);\n\n//# sourceURL=webpack:///./src/components/sample/show.js?");
 
 /***/ }),
 

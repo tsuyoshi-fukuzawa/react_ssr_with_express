@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const About = props => {
+const SampleIndex = props => {
     return (
         <div>
             This Page is About Page!!<br />
@@ -10,4 +10,4 @@ const About = props => {
     );
 };
 
-export default About;
+export default SampleIndex;

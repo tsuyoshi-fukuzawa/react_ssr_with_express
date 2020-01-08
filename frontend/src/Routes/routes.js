@@ -1,20 +1,21 @@
-import Html from '../Container/Html';
-import App from '../Container/App';
-import About from '../Container/About';
+import Server from '../components/layouts/server';
+import Home from '../components/home';
+import SampleIndex from '../components/sample';
+import SampleShow from '../components/sample/show';
 
 const Routes = [
     {
-        component: Html,
+        component: Server,
         routes: [
             {
                 path: '/',
                 exact: true,
-                component: App,
+                component: Home,
             },
             {
-                path: '/about',
+                path: '/sample',
                 exact: true,
-                component: About,
+                component: SampleIndex,
             },
         ],
     },
