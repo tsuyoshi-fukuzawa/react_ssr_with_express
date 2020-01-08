@@ -1,11 +1,10 @@
-import Server from '../components/pages/layouts/server';
+import Html from '../components/pages/layouts/html';
 import Home from '../components/pages/home';
 import SampleIndex from '../components/pages/sample';
-import SampleShow from '../components/pages/sample/show';
 
 const Routes = [
   {
-    component: Server,
+    component: Html,
     routes: [
       {
         path: '/',

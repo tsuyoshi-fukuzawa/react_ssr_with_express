@@ -2,13 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = props => {
-    return (
-        <div>
-            Name is {props.name || 'hoge'} <br />
-            Path is {props.match.path} <br />
-            <Link to={'/sample'}>about</Link>
-        </div>
-    );
+  return (
+    <div>
+      This is root<br/>
+      <Link to={'/sample'}> sample </Link>
+    </div>
+  );
 };
 
 export default Home;

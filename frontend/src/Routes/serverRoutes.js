@@ -12,7 +12,7 @@ var router = express.Router()
 
 router.get('*', (req, res) => {
     let context = {};
-
+    res.write('<!DOCTYPE html>');
     ReactDOMServer.renderToNodeStream(
         <StaticRouter location={req.url} context={context}>
             {renderRoutes(routes)}
