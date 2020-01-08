@@ -4,13 +4,16 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import routes from "./routes/routes";
 
+console.log(routes[0])
+
 const Index = () => {
   return (
     <BrowserRouter>
-      {routes.map((route, index) => (
+      {routes[0].routes.map((route, index) => (
           <Route path={route.path} component={route.component} exact={route.exact} key={index}/>
       ))}
     </BrowserRouter>
+
   );
 };
 
