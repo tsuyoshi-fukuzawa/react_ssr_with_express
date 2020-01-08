@@ -22,7 +22,7 @@
     "redux-logger": "^3.0.6"
   },
   "scripts": {
-    "server": "node public/server.js",
+    "server": "node dist/server.js",
     "build": "webpack --config webpack.config.js"
   }
 }

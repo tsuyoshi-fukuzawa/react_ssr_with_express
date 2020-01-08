@@ -5,3 +5,7 @@ $ npm run build
 
 ## server
 $ npm run server
+
+
+# production sample
+https://qiita.com/wakusan-6126/items/c7963ba2359f60474e99
