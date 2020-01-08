@@ -3,6 +3,8 @@ import ReactDOMServer from 'react-dom/server';
 
 // BrowserRouterのサーバ版
 import { StaticRouter } from 'react-router-dom'
+import { renderRoutes } from 'react-router-config';
+import routes from './routes';
 
 import SsrHtml from '../components/pages/layouts/ssrHtml'
 
@@ -13,7 +15,9 @@ let serverRoutes = express.Router()
 serverRoutes.get('*', (req, res) => {
   const context = {};
   ReactDOMServer.renderToNodeStream(
-    <SsrHtml/>
+    <StaticRouter location={req.url} context={context}>
+      {renderRoutes(routes)}
+    </StaticRouter>
   ).pipe(res);
 });
 

@@ -4,8 +4,6 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import routes from "./routes/routes";
 
-console.log(routes[0])
-
 const Index = () => {
   return (
     <BrowserRouter>

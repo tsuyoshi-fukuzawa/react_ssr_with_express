@@ -1,4 +1,5 @@
 import React from 'react';
+import { renderRoutes } from 'react-router-config';
 
 const SsrHtml = props => {
   return (
@@ -7,7 +8,8 @@ const SsrHtml = props => {
         <title>SSR</title>
       </head>
       <body>
-        HEY
+        <div id="index">{renderRoutes(props.route.routes)}</div>
+        <script src="/main.js" />
       </body>
     </html>
   );
