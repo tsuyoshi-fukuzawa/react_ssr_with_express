@@ -15,7 +15,7 @@ module.exports = merge(webpackConfig, {
         secure: false,
         logLevel: 'debug'
       },
-      '/test': {
+      '/contact': {
         target: 'http://localhost:3000',
         secure: false,
         logLevel: 'debug'

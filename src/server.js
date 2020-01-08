@@ -13,7 +13,7 @@ app.get('/api', (req, res) => {
   res.send({api: 'test'});
 })
 
-app.get('/test', (req, res) => {
+app.get('/contact', (req, res) => {
   ReactDOMServer.renderToNodeStream(
     <div>
       test
