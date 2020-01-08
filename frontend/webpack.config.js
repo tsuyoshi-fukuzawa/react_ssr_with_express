@@ -14,8 +14,7 @@ const config = {
         server: [src + '/server.js'],
     },
     output: {
-        path: path.resolve(__dirname, './public/'),
-        publicPath: './public/',
+        path: dist,
         filename: '[name].js',
     },
     module: {
