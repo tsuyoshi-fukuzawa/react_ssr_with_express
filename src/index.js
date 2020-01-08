@@ -29,4 +29,4 @@ const About = () => (
   </div>
 )
 
-ReactDOM.hydrate(<Index />, document.getElementById("index")); 
+ReactDOM.render(<Index />, document.getElementById("index")); 
