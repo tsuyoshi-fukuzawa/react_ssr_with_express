@@ -1,12 +1,9 @@
+// このファイルはSSRのパスが増えても触ることはない。
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-
-// BrowserRouterのサーバ版
 import { StaticRouter } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config';
 import routes from './routes';
-
-import SsrHtml from '../components/pages/layouts/ssrHtml'
 
 import express from 'express';
 const app = express();

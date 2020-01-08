@@ -11,7 +11,6 @@ const Index = () => {
           <Route path={route.path} component={route.component} exact={route.exact} key={index}/>
       ))}
     </BrowserRouter>
-
   );
 };
 

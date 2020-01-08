@@ -1,11 +1,14 @@
+import SsrHtml from '../components/pages/layouts/ssrHtml'
 import Home from "../components/pages/home";
 import About from "../components/pages/about";
 import Contact from "../components/pages/contact";
-import SsrHtml from '../components/pages/layouts/ssrHtml'
 
+// 'react-router-config'を使用するため、以下のフォーマットでroutesを作る。
 const routes = [
   {
+    // SSRの時はここのcomponentが使用される
     component: SsrHtml,
+    // 以下は通常通り
     routes: [
       {
         path: '/',
